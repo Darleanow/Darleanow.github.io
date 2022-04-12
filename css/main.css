@@ -1,6 +1,11 @@
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
 body {
   color: white;
-  margin: 0;
   text-align: center;
   background-color: black;
   cursor: crosshair;
@@ -61,3 +66,133 @@ h2::after {
   border-radius: 100px;
   padding: 10px 25px;
 }
+
+#info{
+  box-sizing: border-box; 
+	position: absolute;
+  inset-block-start:0;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
+  margin:auto;
+  padding:0;
+  inline-size: 100px;
+  block-size: 100px;
+	inset-block-start: 10px;
+	inline-size: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;  
+  font-family: "Gill Sans", sans-serif;
+
+
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+ * {
+	 box-sizing: border-box;
+}
+ *::before, *::after {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: 'Mukta', sans-serif;
+	 font-size: 1rem;
+	 line-height: 1.5;
+	 display: flex;
+	 align-items: center;
+}
+ button {
+	 position: relative;
+	 display: inline-block;
+	 cursor: pointer;
+	 outline: none;
+	 border: 0;
+	 vertical-align: middle;
+	 text-decoration: none;
+	 background: transparent;
+	 padding: 0;
+	 font-size: inherit;
+	 font-family: inherit;
+}
+ button.learn-more {
+	 inline-size: 12rem;
+	 block-size: auto;
+}
+ button.learn-more .circle {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 position: relative;
+	 display: block;
+	 margin: 0;
+	 inline-size: 3rem;
+	 block-size: 3rem;
+	 background: #da538b;
+	 border-radius: 1.625rem;
+}
+ button.learn-more .circle .icon {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 position: absolute;
+	 inset-block-start: 0;
+	 inset-block-end: 0;
+	 margin: auto;
+	 background: #fff;
+}
+ button.learn-more .circle .icon.arrow {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 inset-inline-start: 0.625rem;
+	 inline-size: 1.125rem;
+	 block-size: 0.125rem;
+	 background: none;
+}
+ button.learn-more .circle .icon.arrow::before {
+	 position: absolute;
+	 content: '';
+	 inset-block-start: -0.25rem;
+	 inset-inline-end: 0.0625rem;
+	 inline-size: 0.625rem;
+	 block-size: 0.625rem;
+	 border-block-start: 0.125rem solid #fff;
+	 border-inline-end: 0.125rem solid #fff;
+	 transform: rotate(45deg);
+}
+ button.learn-more .button-text {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 position: absolute;
+	 inset-block-start: 0;
+	 inset-inline-start: 0;
+	 inset-inline-end: 0;
+	 inset-block-end: 0;
+	 padding: 0.75rem 0;
+	 margin: 0 0 0 1.85rem;
+	 color: #993961;
+	 font-weight: 700;
+	 line-height: 1.6;
+	 text-align: center;
+	 text-transform: uppercase;
+}
+ button:hover .circle {
+	 inline-size: 100%;
+}
+ button:hover .circle .icon.arrow {
+	 background: #fff;
+	 transform: translate(1rem, 0);
+}
+ button:hover .button-text {
+	 color: #fff;
+}
+ @supports (display: grid) {
+	 body {
+		 display: grid;
+		 grid-template-columns: repeat(4, 1fr);
+		 grid-gap: 0.625rem;
+		 grid-template-areas: ". main main ." ". main main .";
+	}
+	 #container {
+		 grid-area: main;
+		 align-self: center;
+		 justify-self: center;
+	}
+}
+ 
+
