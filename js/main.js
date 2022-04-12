@@ -40,7 +40,7 @@ var setcolor = 0xF02050;
 //var setcolor = 0xFF6347;
 
 scene.background = new THREE.Color(setcolor);
-scene.fog = new THREE.Fog(setcolor, 10, 16);
+scene.fog = new THREE.Fog(setcolor, 7, 15);
 //scene.fog = new THREE.FogExp2(setcolor, 0.05);
 //----------------------------------------------------------------- RANDOM Function
 function mathRandom(num = 8) {
